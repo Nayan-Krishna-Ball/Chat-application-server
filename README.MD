@@ -73,6 +73,12 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 ## ⚙️ Installation & Setup
 
+### Clone Repository
+
+```
+git clone https://github.com/Nayan-Krishna-Ball/Chat-application-server.git
+```
+
 ### Install dependencies
 
 ```bash id="install-deps"
