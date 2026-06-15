@@ -9,6 +9,12 @@ const cors = require("cors");
 
 //middleware
 app.use(cors());
+// app.use(
+//   cors({
+//     origin: process.env.CLIENT_URL || "http://localhost:5173",
+//     credentials: true,
+//   }),
+// );
 
 app.use(
   express.json({
@@ -22,6 +28,7 @@ const server = require("http").createServer(app);
 const io = require("socket.io")(server, {
   cors: {
     origin: "http://localhost:5173",
+    // origin: process.env.CLIENT_URL || "http://localhost:5173",
     methods: ["GET", "POST"],
   },
 });
